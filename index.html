@@ -17,7 +17,9 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- header section starts here -->
+    <!-----------------------------------------------------
+      header section starts here
+    ------------------------------------------------------>
     <header class="headerSec">
       <button class="again btn">again!!</button>
       <p class="tag">
@@ -27,13 +29,17 @@
       </p>
     </header>
 
-    <!-- system section -->
+    <!------------------------------------------------------
+      system section
+    ------------------------------------------------------->
     <section class="systemSec">
       <h1 class="gtn">GUESS THE NUMBER</h1>
       <div class="systemGuess numberBox">?</div>
     </section>
 
-    <!-- main section for the player -->
+    <!------------------------------------------------------
+      main section for the player
+    ------------------------------------------------------->
     <main class="mainSec">
       <div class="guessAndButton">
         <input type="number" placeholder="guess" class="guess numberBox" />
@@ -52,8 +58,36 @@
       </div>
     </main>
 
+    <!-----------------------------------------------------
+      footer section
+    ------------------------------------------------------->
+    <footer class="footerSec">designed by Abhishek kumar</footer>
+    <div class="info">design is not responsive yet</div>
+
+    <!----------------------------------------------------- 
+      this is all the popup materaial 
+    ------------------------------------------------------->
+
     <!-- div for blurring the page -->
-    <div class="blurDiv visible"></div>
+    <div class="blurDiv"></div>
+
+    <!-- opening div  -->
+    <div class="openingDiv">
+      <h2>guess the number game</h2>
+      <br />
+      <h3>game rules</h3>
+      <br />
+      <ol class="rules">
+        <li>System guessed a number btw 1 & 20</li>
+        <li>You have to guess that number</li>
+        <li>Enter in the box with guess written in it.</li>
+        <li>click on check to match.</li>
+        <li>Your will have only 20 chances</li>
+      </ol>
+      <br />
+      <br />
+      <button class="ruleCls">close</button>
+    </div>
 
     <!-- number warning div -->
     <div class="numberWarn positionCls visible">
@@ -82,6 +116,7 @@
       <button class="congBtn">click to refresh</button>
     </div>
 
+    <!-- communication section -->
     <div class="communication visible">
       <a href="" class="comlink facebooklink"> facebook </a>
       <br />
@@ -94,9 +129,6 @@
       <button class="comClose">close</button>
     </div>
 
-    <!-- footer section -->
-    <footer class="footerSec">designed by Abhishek kumar</footer>
-    <div class="info">design is not responsive yet</div>
     <!-- javascript pages for website -->
     <script src="main.js" charset="utf-8"></script>
   </body>
