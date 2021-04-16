@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font style link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header section starts here -->
+    <header class="headerSec">
+      <button class="again btn">again!!</button>
+      <p class="tag">
+        GUESS THE NUMBER
+        <br />
+        BETWEEN 1 AND 20
+      </p>
+    </header>
+
+    <!-- system section -->
+    <section class="systemSec">
+      <h1 class="gtn">GUESS THE NUMBER</h1>
+      <div class="systemGuess numberBox">?</div>
+    </section>
+
+    <!-- main section for the player -->
+    <main class="mainSec">
+      <div class="guessAndButton">
+        <input type="number" placeholder="guess" class="guess numberBox" />
+        <button class="check btn">check!</button>
+      </div>
+      <div class="displaytext">
+        <span class="guide">🤔Guess the Number.</span>
+        <br />
+        <span class="bestScorePara">
+          🥇bestScore: <span class="bestScore">0</span>
+        </span>
+        <br />
+        <span class="currentScorePara">
+          🏆YourScore: <span class="currentScore"> 20 </span>
+        </span>
+      </div>
+    </main>
+
+    <!-- div for blurring the page -->
+    <div class="blurDiv visible"></div>
+
+    <!-- number warning div -->
+    <div class="numberWarn positionCls visible">
+      <p class="warninghead">
+        ❌Warning❗❗
+        <br />
+        Please Enter a Number Between 1 & 20
+      </p>
+      <button class="closeWarning">close warning</button>
+    </div>
+
+    <!-- winner congratulation div -->
+    <div class="winner positionCls visible">
+      <p>
+        🎇🎉congratulations!!
+        <br />
+        You have won the game...
+      </p>
+      <span class="bestScorePara">
+        🥇bestScore: <span class="bestScore"> 0 </span>
+      </span>
+      <br />
+      <span class="currentScorePara">
+        🏆YourScore: <span class="currentScore"> 20 </span>
+      </span>
+      <button class="congBtn">click to refresh</button>
+    </div>
+
+    <div class="communication visible">
+      <a href="" class="comlink facebooklink"> facebook </a>
+      <br />
+      <a href="" class="comlink instagramlink"> instagram </a>
+      <br />
+      <a href="" class="comlink twitterlink"> twitter </a>
+      <br />
+      <a href="" class="comlink githublink"> github </a>
+      <br />
+      <button class="comClose">close</button>
+    </div>
+
+    <!-- footer section -->
+    <footer class="footerSec">designed by Abhishek kumar</footer>
+    <div class="info">design is not responsive yet</div>
+    <!-- javascript pages for website -->
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
