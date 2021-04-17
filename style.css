@@ -25,7 +25,7 @@ body {
 .blurDiv {
   position: fixed;
   background-color: #5559;
-  backdrop-filter: blur(0.1rem);
+  backdrop-filter: blur(0.8rem);
   top: 0;
   left: 0;
   width: 100vw;
@@ -51,6 +51,20 @@ body {
 
 .btn:active {
   box-shadow: 0.7rem 1rem 0.1rem #444;
+}
+
+.winloseBtn {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.3rem;
+  padding: 2rem 3rem;
+  outline: none;
+  border-radius: 2rem;
+}
+
+.winbtn {
+  background-color: rgb(164, 255, 164);
+  border: 3px solid rgb(0, 83, 0);
+  box-shadow: 8px 8px 5px rgb(0, 160, 0);
 }
 
 .headerSec {
@@ -197,6 +211,10 @@ body {
 
 .displaytext {
   font-size: 2.3rem;
+  width: 45rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .footerSec {
@@ -250,7 +268,8 @@ body {
 }
 
 .comlink {
-  padding: 2rem;
+  padding: 1.7rem 2rem;
+  margin: 0.2rem;
   font-size: 1.8rem;
   display: inline-block;
   color: #fff;
@@ -277,9 +296,19 @@ body {
 }
 .comClose {
   display: inline-block;
+  color: #fff;
+  background-color: #000;
   font-family: "Press Start 2P", cursive;
   padding: 1.2rem 4rem;
+  border: 3px solid #fff;
   border-radius: 2rem;
+  outline: none;
+  transition: 150ms all linear;
+}
+
+.comClose:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .info {
@@ -296,8 +325,8 @@ body {
   background: #ddd;
   padding: 3rem 4rem 3rem 9rem;
   text-align: center;
-  top: 21%;
-  left: 19%;
+  top: 18%;
+  left: 21%;
   font-size: 2rem;
   border: 5px solid #555;
   border-radius: 2rem;
@@ -307,6 +336,7 @@ body {
 .rules {
   text-align: left;
   line-height: 2;
+  font-size: 1.7rem;
 }
 
 .ruleCls {
@@ -326,6 +356,40 @@ body {
 
 .ruleCls:active {
   box-shadow: 3px 3px 4px #555;
+}
+
+.loser {
+  background-color: #ddd;
+  padding: 4rem 9rem;
+  text-align: center;
+  position: fixed;
+  top: 23%;
+  left: 27%;
+  font-size: 2rem;
+  border: 5px solid #555;
+  border-radius: 2rem;
+  box-shadow: 8px 8px 8px #555;
+}
+
+.loser > h2,
+p {
+  margin-bottom: 2rem;
+}
+
+.loseBtn {
+  color: rgb(75, 0, 0);
+  background-color: rgb(255, 241, 241);
+  border: 3px solid rgb(83, 0, 0);
+  box-shadow: 5px 5px 4px rgb(160, 0, 0);
+  transition: 100ms all ease;
+}
+
+.loseBtn:hover {
+  box-shadow: 10px 10px 4px rgb(160, 0, 0);
+}
+
+.loseBtn:active {
+  box-shadow: 3px 3px 4px rgb(160, 0, 0);
 }
 
 @keyframes footerAnimation {

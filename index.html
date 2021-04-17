@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- font style link -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
@@ -82,30 +82,18 @@
         <li>You have to guess that number</li>
         <li>Enter in the box with guess written in it.</li>
         <li>click on check to match.</li>
-        <li>Your will have only 20 chances</li>
+        <li>Your will have only 20 chances.</li>
+        <li>For hint see on the right hand side message</li>
       </ol>
       <br />
       <br />
       <button class="ruleCls">close</button>
     </div>
 
-    <!-- number warning div -->
-    <div class="numberWarn positionCls visible">
-      <p class="warninghead">
-        ❌Warning❗❗
-        <br />
-        Please Enter a Number Between 1 & 20
-      </p>
-      <button class="closeWarning">close warning</button>
-    </div>
-
     <!-- winner congratulation div -->
     <div class="winner positionCls visible">
-      <p>
-        🎇🎉congratulations!!
-        <br />
-        You have won the game...
-      </p>
+      <h3>🎇🎉congratulations!!</h3>
+      <p>You have won the game...</p>
       <span class="bestScorePara">
         🥇bestScore: <span class="bestScore"> 0 </span>
       </span>
@@ -113,7 +101,18 @@
       <span class="currentScorePara">
         🏆YourScore: <span class="currentScore"> 20 </span>
       </span>
-      <button class="congBtn">click to refresh</button>
+      <button class="winBtn winloseBtn">click to refresh</button>
+    </div>
+
+    <!-- losing div -->
+    <div class="loser visible">
+      <h2>🤦‍♀You Lost!</h2>
+      <p>
+        Your used all you chances.
+        <br />
+        you lost the game.
+      </p>
+      <button class="loseBtn winloseBtn">click to refresh</button>
     </div>
 
     <!-- communication section -->
