@@ -53,20 +53,6 @@ body {
   box-shadow: 0.7rem 1rem 0.1rem #444;
 }
 
-.winloseBtn {
-  font-family: "Press Start 2P", cursive;
-  font-size: 1.3rem;
-  padding: 2rem 3rem;
-  outline: none;
-  border-radius: 2rem;
-}
-
-.winbtn {
-  background-color: rgb(164, 255, 164);
-  border: 3px solid rgb(0, 83, 0);
-  box-shadow: 8px 8px 5px rgb(0, 160, 0);
-}
-
 .headerSec {
   display: flex;
   justify-content: space-between;
@@ -226,7 +212,7 @@ body {
   padding: 1rem;
   animation-name: footerAnimation;
   animation-duration: 900ms;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -258,9 +244,9 @@ body {
 .communication {
   background-color: #000;
   height: 33rem;
-  position: fixed;
+  position: absolute;
   right: 2rem;
-  bottom: 8rem;
+  bottom: 4rem;
   text-align: center;
   border-radius: 2rem;
   padding: 1rem;
@@ -359,16 +345,16 @@ body {
 }
 
 .loser {
-  background-color: #ddd;
+  background-color: #fffa;
+  backdrop-filter: blur(5px);
   padding: 4rem 9rem;
   text-align: center;
   position: fixed;
   top: 23%;
   left: 27%;
   font-size: 2rem;
-  border: 5px solid #555;
   border-radius: 2rem;
-  box-shadow: 8px 8px 8px #555;
+  box-shadow: 9px 9px 12px #333;
 }
 
 .loser > h2,
@@ -377,23 +363,27 @@ p {
 }
 
 .loseBtn {
-  color: rgb(75, 0, 0);
-  background-color: rgb(255, 241, 241);
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.3rem;
+  padding: 2rem 3rem;
+  outline: none;
+  border-radius: 2rem;
+  background-color: rgb(255, 164, 164);
   border: 3px solid rgb(83, 0, 0);
-  box-shadow: 5px 5px 4px rgb(160, 0, 0);
+  box-shadow: 6px 6px 5px #333;
   transition: 100ms all ease;
 }
 
 .loseBtn:hover {
-  box-shadow: 10px 10px 4px rgb(160, 0, 0);
+  box-shadow: 9px 9px 10px #333;
 }
 
 .loseBtn:active {
-  box-shadow: 3px 3px 4px rgb(160, 0, 0);
+  box-shadow: 3px 3px 2px #333;
 }
 
 @keyframes footerAnimation {
-  0% {
+  25% {
     background-image: linear-gradient(
       to right,
       rgb(0, 0, 0),
@@ -404,7 +394,7 @@ p {
     outline: 2px solid #4448;
     outline-offset: 3px;
   }
-  30% {
+  50% {
     background-image: linear-gradient(
       to right,
       rgb(0, 0, 0),
@@ -414,7 +404,7 @@ p {
     );
     outline: none;
   }
-  70% {
+  75% {
     background-image: linear-gradient(
       to right,
       rgb(0, 0, 0),
@@ -435,20 +425,5 @@ p {
     );
     outline: 2px solid #4448;
     outline-offset: 9px;
-  }
-}
-
-@keyframes footerHover {
-  0% {
-    box-shadow: -1rem -1rem 0.1rem #444f;
-  }
-  30% {
-    box-shadow: -1.5rem -1.5rem 0.4rem #444a;
-  }
-  70% {
-    box-shadow: -1.7rem -1.7rem 0.8rem #4447;
-  }
-  100% {
-    box-shadow: -1.9rem -1.9rem 1rem #4441;
   }
 }

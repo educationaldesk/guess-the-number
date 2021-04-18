@@ -7,62 +7,64 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- font style link -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
-    /> -->
+    />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
   <body>
-    <!-----------------------------------------------------
+    <div class="parentCon">
+      <!-----------------------------------------------------
       header section starts here
     ------------------------------------------------------>
-    <header class="headerSec">
-      <button class="again btn">again!!</button>
-      <p class="tag">
-        GUESS THE NUMBER
-        <br />
-        BETWEEN 1 AND 20
-      </p>
-    </header>
+      <header class="headerSec">
+        <button class="again btn">again!!</button>
+        <p class="tag">
+          GUESS THE NUMBER
+          <br />
+          BETWEEN 1 AND 20
+        </p>
+      </header>
 
-    <!------------------------------------------------------
+      <!------------------------------------------------------
       system section
     ------------------------------------------------------->
-    <section class="systemSec">
-      <h1 class="gtn">GUESS THE NUMBER</h1>
-      <div class="systemGuess numberBox">?</div>
-    </section>
+      <section class="systemSec">
+        <h1 class="gtn">GUESS THE NUMBER</h1>
+        <div class="systemGuess numberBox">?</div>
+      </section>
 
-    <!------------------------------------------------------
+      <!------------------------------------------------------
       main section for the player
     ------------------------------------------------------->
-    <main class="mainSec">
-      <div class="guessAndButton">
-        <input type="number" placeholder="guess" class="guess numberBox" />
-        <button class="check btn">check!</button>
-      </div>
-      <div class="displaytext">
-        <span class="guide">🤔Guess the Number.</span>
-        <br />
-        <span class="bestScorePara">
-          🥇bestScore: <span class="bestScore">0</span>
-        </span>
-        <br />
-        <span class="currentScorePara">
-          🏆YourScore: <span class="currentScore"> 20 </span>
-        </span>
-      </div>
-    </main>
+      <main class="mainSec">
+        <div class="guessAndButton">
+          <input type="number" placeholder="guess" class="guess numberBox" />
+          <button class="check btn">check!</button>
+        </div>
+        <div class="displaytext">
+          <span class="guide">🤔Guess the Number.</span>
+          <br />
+          <span class="bestScorePara">
+            🥇bestScore: <span class="bestScore">0</span>
+          </span>
+          <br />
+          <span class="currentScorePara">
+            🏆YourScore: <span class="currentScore"> 20 </span>
+          </span>
+        </div>
+      </main>
+      <div class="info">design is not responsive yet</div>
+    </div>
 
     <!-----------------------------------------------------
       footer section
     ------------------------------------------------------->
     <footer class="footerSec">designed by Abhishek kumar</footer>
-    <div class="info">design is not responsive yet</div>
 
     <!----------------------------------------------------- 
       this is all the popup materaial 
@@ -90,20 +92,6 @@
       <button class="ruleCls">close</button>
     </div>
 
-    <!-- winner congratulation div -->
-    <div class="winner positionCls visible">
-      <h3>🎇🎉congratulations!!</h3>
-      <p>You have won the game...</p>
-      <span class="bestScorePara">
-        🥇bestScore: <span class="bestScore"> 0 </span>
-      </span>
-      <br />
-      <span class="currentScorePara">
-        🏆YourScore: <span class="currentScore"> 20 </span>
-      </span>
-      <button class="winBtn winloseBtn">click to refresh</button>
-    </div>
-
     <!-- losing div -->
     <div class="loser visible">
       <h2>🤦‍♀You Lost!</h2>
@@ -112,7 +100,7 @@
         <br />
         you lost the game.
       </p>
-      <button class="loseBtn winloseBtn">click to refresh</button>
+      <button class="loseBtn">click to refresh</button>
     </div>
 
     <!-- communication section -->
