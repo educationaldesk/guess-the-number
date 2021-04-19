@@ -2,7 +2,6 @@
 
 //random number generator
 let randomNum = Math.trunc(Math.random() * 20 + 1);
-console.log(randomNum);
 
 //score and highcore.
 let highScore = 0;
@@ -98,7 +97,6 @@ check.addEventListener("click", function () {
 //refresh function for again btn and click-to-refresh btn in lose div
 function refresh() {
   randomNum = Math.trunc(Math.random() * 20 + 1);
-  console.log(randomNum);
   guess.value = ``;
   yourScore = 20;
   currentScore.textContent = yourScore;
