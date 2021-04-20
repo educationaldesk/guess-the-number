@@ -103,6 +103,7 @@ function refresh() {
   guide.textContent = `🤔Guess the Number.`;
   body.style.background = `url("img/backgroundpc.png")`;
   gtn.textContent = `GUESS THE NUMBER`;
+  systemGuess.textContent = `?`;
 
   //adding to if statement to control loser popup
   //as of know i am beginner to this the way i know right now i will correct it in future.
